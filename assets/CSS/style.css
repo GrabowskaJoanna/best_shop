@@ -1,1 +1,106 @@
+:root {
+    --primary-font: 'Lato', sans-serif;
+    --secondary-font: 'Open Sans', sans-serif;
 
+
+    --color-white: #FFFFFF;
+    --color-primary: #08A6E4;
+    --color-black: #000000;
+    --color-redish: #FB3B64;
+    --color-green: #55DFB4;
+    --color-grey: #A5A5A5;
+    --color-light-grey: #F7F7F7;
+    --color-primary-shadow: rgba(7, 172, 230, .16);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.container {
+    width: 1352px;
+}
+/*header*/
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav__page {
+    box-shadow: 0 3px 6px #00000029;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__links {
+    display: flex;
+    font-size: 11px;
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+    color: #A5A5A5;
+    margin: 0 136px 0 0;
+}
+.nav__link {
+    padding: 28px 18px 22px;
+}
+.nav__link:hover {
+    cursor: pointer;
+    color: var(--color-black);
+    border-bottom: 4px solid var(--color-primary);
+}
+.nav__link a {
+    padding: 0 26px;
+}
+.nav__link:last-child {
+    padding-right: 0;
+}
+.nav__logo {
+    color: var(--color-primary);
+    font-family: var(--primary-font);
+    font-size: 36px;
+    margin-left: 136px;
+    font-weight: lighter;
+    margin-top: 16px;
+    margin-bottom: 17px;
+}
+
+/*opening*/
+
+.opening {
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.opening__title {
+    font-family: var(--primary-font);
+    font-size: 49px;
+    font-weight: normal;
+    margin-top: 130px;
+}
+.opening__img {
+    height: auto;
+    width: 100%;
+}
+.opening__text {
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    margin-bottom: 62px;
+    margin-top: 20px;
+}
+.opening__CTA {
+    background-color: var(--color-primary);
+    border-radius: 40px;
+    padding: 22px 157px 23px 157px;
+    color: var(--color-white);
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 58px;
+    box-shadow: 3px 10px 14px var(--color-primary-shadow);
+}
