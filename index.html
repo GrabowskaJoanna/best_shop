@@ -25,13 +25,13 @@
                 <a href="#">Why us</a>
             </li>
             <li class="nav__link">
-                <a href="#">Benefits</a>
+                <a href="#benefits">Benefits</a>
             </li>
             <li class="nav__link">
-                <a href="#">Prices</a>
+                <a href="#pricing">Prices</a>
             </li>
             <li class="nav__link">
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
             </li>
         </ul>
     </nav>
@@ -75,7 +75,7 @@
         </div>
     </div>
 </section>
-<section class="benefits">
+<section class="benefits" id="benefits">
     <div class="container">
         <div class="benefits__card" >
             <div class="benefits__description">
@@ -109,6 +109,87 @@
                 <img src="./assets/images/Trumpet.png" alt="trumpet">
             </div>
         </div>
+    </div>
+</section>
+<section class="pricing" id="pricing">
+    <h2 class="pricing__header">Pricing</h2>
+    <div class="container">
+        <div class="pricing__boxes">
+            <div class="pricing__box pricing__box--basic">
+                <h3 class="box__title">Basic</h3>
+                <p class="box__price">$0</p>
+                <ul class="box__values">
+                    <li class="box__value">100 MB HDD</li>
+                    <li class="box__value">1 Subdomain</li>
+                    <li class="box__value">2 E-mails</li>
+                    <li class="box__value">Two years license</li>
+                    <li class="box__value">Full support</li>
+                </ul>
+                <a href="#" class="box__button box__button--basic">Begin</a>
+            </div>
+            <div class="pricing__box pricing__box--professional">
+                <h3 class="box__title">Professional</h3>
+                <p class="box__price">$25</p>
+                <p class="box__limited">Limited offer</p>
+                <ul class="box__values">
+                    <li class="box__value">500 MB HDD</li>
+                    <li class="box__value">2 Subdomain</li>
+                    <li class="box__value">5 E-mails</li>
+                    <li class="box__value">One year license</li>
+                    <li class="box__value">Full support</li>
+                </ul>
+                <a href="#" class="box__button box__button--professional">Begin</a>
+            </div>
+            <div class="pricing__box pricing__box--premium">
+                <h3 class="box__title">Premium</h3>
+                <p class="box__price">$60</p>
+                <p class="box__limited">Limited offer</p>
+                <ul class="box__values">
+                    <li class="box__value">2 GB HDD</li>
+                    <li class="box__value">5 Subdomain</li>
+                    <li class="box__value">20 E-mails</li>
+                    <li class="box__value">Two years license</li>
+                    <li class="box__value">Full support</li>
+                </ul>
+                <a href="#" class="box__button box__button--premium">Begin</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="contact__questions">
+            <h1 class="questions__header">Any questions?</h1>
+            <p class="questions__instruction">Leave your email address or call us!</p>
+            <div class="questions__details">
+                <a href="#" class="questions__detail">
+                    <img src="./assets/images/Mail%20Icon.svg" alt="mail icon"> info@bestshop.xyz
+                </a>
+                <a href="#" class="questions__detail">
+                    <img src="./assets/images/Phone%20Icon.svg" alt="phone icon"> 123 456 789
+                </a>
+            </div>
+        </div>
+        <form class="contact__form">
+            <label class="label label__text">
+                Name
+                <input type="text" id="name" name="name">
+            </label>
+            <label class="label label__email">
+                Email
+                <input type="email" id="email" name="email">
+            </label>
+            <label class="label__checkbox">
+                <input type="checkbox" id="agreement" name="agreement">
+                I hereby give consent for my personal data included in my application to
+                be processed for the purposes of the recruitment process under the
+                European Parliament’s and Council of the European Union Regulation
+                on the Protection of Natural Persons as of 27 April 2016, with regard to
+                the processing of personal data and on the free movement of such data,
+                and repealing Directive 95/46/EC (Data Protection Directive)
+            </label>
+            <button type="submit" class="form__submit">Send</button>
+        </form>
     </div>
 </section>
 </body>
