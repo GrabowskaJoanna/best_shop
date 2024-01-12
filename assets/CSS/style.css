@@ -30,9 +30,9 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 3px 6px #00000029;
 }
 .nav__page {
-    box-shadow: 0 3px 6px #00000029;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,7 +43,6 @@ a {
     font-family: var(--primary-font);
     text-transform: uppercase;
     color: #A5A5A5;
-    margin: 0 136px 0 0;
 }
 .nav__link {
     padding: 28px 18px 22px;
@@ -59,14 +58,15 @@ a {
 .nav__link:last-child {
     padding-right: 0;
 }
-.nav__logo {
+.logo {
     color: var(--color-primary);
     font-family: var(--primary-font);
-    font-size: 36px;
-    margin-left: 136px;
     font-weight: lighter;
     margin-top: 16px;
     margin-bottom: 17px;
+}
+.nav__logo {
+    font-size: 36px;
 }
 
 /*opening*/
@@ -475,6 +475,11 @@ input {
 }
 .label {
     color: var(--color-primary);
+    text-transform: uppercase;
+    font-family: var(--secondary-font);
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 3px;
     display: flex;
     flex-direction: column;
     padding-bottom: 40px;
@@ -501,4 +506,61 @@ input {
 
 .label__checkbox {
     display: flex;
+    cursor: pointer;
+    color: var(--color-grey);
+    font-family: var(--secondary-font);
+    line-height: 17px;
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+.label__checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.label__checkbox span {
+    height: 24px;
+    flex-shrink: 0;
+    flex-basis: 24px;
+    border: 2px solid var(--color-grey);
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+.label__checkbox input:checked + span {
+    background-image: url("../images/Checkmark.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.footer__logo {
+    font-size: 26px;
+    padding-bottom: 5px;
+}
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+.footer {
+    background-color: var(--color-light-grey);
+    box-shadow: 0 -5px 40px #00000029;
+    height: 89px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.footer__text {
+    font-family: var(--secondary-font);
+    color: var(--color-grey);
+    font-size: 11px;
+    letter-spacing: 0;
+    padding-top: 5px;
+}
+.footer__icons {
+    padding: 5px;
+}
+.footer__icons a:first-of-type {
+    padding-right: 5px;
 }
