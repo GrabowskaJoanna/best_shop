@@ -1,0 +1,100 @@
+@import "_variables";
+
+.contact {
+  display: flex;
+  justify-content: center;
+}
+.contact .container {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+}
+.contact__form {
+  width: 440px;
+  display: flex;
+  flex-direction: column;
+}
+.questions__header {
+  font-family: $primary-font;
+  font-size: 49px;
+  font-weight: normal;
+  padding-bottom: 22px;
+}
+.questions__instruction {
+  font-family: $secondary-font;
+  padding-bottom: 40px;
+}
+.questions__detail {
+  font-family: $secondary-font;
+  color: $color-grey;
+}
+.questions__detail:first-of-type {
+  padding-right: 20px;
+}
+input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid $color-black;
+  height: 40px;
+}
+.label {
+  color: $color-primary;
+  text-transform: uppercase;
+  font-family: $secondary-font;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+.form__submit {
+  display: inline-flex;
+  background-color: $color-primary;
+  border-radius: 35px;
+  box-shadow: 5px 10px 14px $color-primary-shadow;
+  color: $color-white;
+  border: none;
+  padding: 20px 97px;
+  font-family: $secondary-font;
+  font-size: 13px;
+  font-weight: bold;
+  justify-content: center;
+  align-self: flex-end;
+}
+
+.pricing__boxes {
+  display: flex;
+  align-items: center;
+}
+
+.label__checkbox {
+  display: flex;
+  cursor: pointer;
+  color: $color-grey;
+  font-family: $secondary-font;
+  line-height: 17px;
+  font-size: 12px;
+  padding-bottom: 20px;
+}
+.label__checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.label__checkbox span {
+  height: 24px;
+  flex-shrink: 0;
+  flex-basis: 24px;
+  border: 2px solid $color-grey;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+.label__checkbox input:checked + span {
+  background-image: url("../images/Checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
