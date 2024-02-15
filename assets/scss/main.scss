@@ -6,16 +6,19 @@
 @import "_opening";
 @import "_pricing";
 @import "_statisctics";
+@import "mixins";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 a {
   text-decoration: none;
   color: inherit;
 }
+
 .container {
   width: 1352px;
 }

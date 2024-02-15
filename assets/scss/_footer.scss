@@ -1,13 +1,6 @@
 @import "_variables";
 
-.footer__logo {
-  font-size: 26px;
-  padding-bottom: 5px;
-}
-.footer .container {
-  display: flex;
-  justify-content: space-between;
-}
+
 .footer {
   background-color: $color-light-grey;
   box-shadow: 0 -5px 40px #00000029;
@@ -16,17 +9,32 @@
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-}
-.footer__text {
-  font-family: $secondary-font;
-  color: $color-grey;
-  font-size: 11px;
-  letter-spacing: 0;
-  padding-top: 5px;
-}
-.footer__icons {
-  padding: 5px;
-}
-.footer__icons a:first-of-type {
-  padding-right: 5px;
+
+  & .container {
+    display: flex;
+    justify-content: space-between;
+
+    .footer__info {
+      .footer__logo {
+        font-size: 26px;
+        padding-bottom: 5px;
+      }
+
+      .footer__text {
+        font-family: $secondary-font;
+        color: $color-grey;
+        font-size: 11px;
+        letter-spacing: 0;
+        padding-top: 5px;
+      }
+    }
+
+    .footer__icons {
+      padding: 5px;
+
+      & a:first-of-type {
+        padding-right: 5px;
+      }
+    }
+  }
 }
