@@ -79,3 +79,20 @@
   }
 }
 
+@media (width < 500px) {
+  .statistics__header {
+    font-size: 30px;
+    margin: 30px;
+    padding: 20px;
+  }
+  .statistics__cards {
+    flex-direction: column;
+  }
+  .statistics__card {
+    margin: 17px;
+  }
+
+  .statistics {
+    margin-bottom: 40px;
+  }
+}

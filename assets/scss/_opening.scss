@@ -19,6 +19,7 @@
     font-size: 16px;
     margin-bottom: 62px;
     margin-top: 20px;
+    font-weight: normal;
   }
 
   .opening__button {
@@ -39,6 +40,35 @@
   }
 }
 
+@media (width < 800px) {
+  .opening .container {
+    width: 100vh;
+  }
+}
+
+@media (width < 500px) {
+  .opening .container {
+    width: 100vh;
+    .opening__header {
+      font-size: 35px;
+    }
+    .opening__text {
+      width: 308px;
+      margin: auto;
+      margin-bottom: 30px;
+      padding: 20px;
+    }
+    .opening__button {
+      padding: 22px 92px 23px;
+      margin-top: 60px;
+    }
+    .opening__img {
+      width: 70%;
+      height: auto;
+      padding-top: 25px;
+    }
+  }
+}
 
 
 

@@ -6,7 +6,6 @@
 @import "_opening";
 @import "_pricing";
 @import "_statisctics";
-@import "mixins";
 
 * {
   margin: 0;
@@ -21,4 +20,5 @@ a {
 
 .container {
   width: 1352px;
+  justify-content: center;
 }
