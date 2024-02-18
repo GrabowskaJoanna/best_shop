@@ -179,7 +179,7 @@
     flex-direction: column;
   }
   .pricing .container .pricing__boxes .pricing__box {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
   }
   .pricing .container .pricing__boxes .pricing__box--basic,
@@ -188,22 +188,29 @@
   }
 }
 
-
 .pricing .container .pricing__boxes .pricing__box .box__details {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-.pricing .container .pricing__boxes .pricing__box .box__details div {
-  flex-direction: column;
-
-  & .box__values {
+.pricing .container .pricing__boxes .pricing__box div {
+  //flex-direction: column;
+}
+  .pricing .container .pricing__boxes .pricing__box div .box__values:first-of-type .box__value {
     text-align: left;
     margin-left: 50px;
   }
+
+.offer-details {
+  display: flex;
+  flex-direction: row;
 }
 
+.begin-button {
+  display: flex;
+  align-items: center;
+}
 
 
 
