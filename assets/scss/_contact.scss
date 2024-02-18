@@ -103,3 +103,46 @@ input {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@media (width <1000px){
+  .contact .container {
+    justify-content: space-around;
+  }
+}
+@media (width <850px) {
+  .contact .container {
+    justify-content: center;
+  }
+  .contact__questions {
+    margin-right: 10px
+  }
+  }
+
+@media (width <800px) {
+  .contact .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact .container .contact__questions {
+    margin-bottom: 30px;
+    margin-right: 150px;
+
+    .questions__header {
+      font-size: 40px;
+    }
+    .questions__details {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (width <500px) {
+  .contact .container .contact__form {
+    width: 300px;
+    margin-right: auto;
+    margin-left: 20px;
+  }
+
+}

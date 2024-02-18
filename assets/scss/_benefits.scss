@@ -149,6 +149,7 @@
 
   .benefits {
     padding-top: 40px;
+    padding-bottom: 0;
     .benefits__card {
       justify-content: center;
       margin: 10px;
@@ -180,7 +181,7 @@
 @media (width < 550px) {
 
   .benefits {
-    padding-bottom: 0;
+
   }
   .benefits__card .benefits__description .benefits__text {
     font-size: 14px;
