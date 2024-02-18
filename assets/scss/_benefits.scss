@@ -178,6 +178,10 @@
 }
 
 @media (width < 550px) {
+
+  .benefits {
+    padding-bottom: 0;
+  }
   .benefits__card .benefits__description .benefits__text {
     font-size: 14px;
     line-height: 19px;
@@ -206,5 +210,9 @@
   .benefits .benefits__card:nth-of-type(2) .benefits__image img {
     max-width: 260px;
     margin: 44px 122px 11px;
+  }
+  .benefits .benefits__double__card .benefits__card {
+    padding-top: 15px;
+    padding-bottom: 15px
   }
 }
