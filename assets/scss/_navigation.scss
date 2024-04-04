@@ -7,6 +7,10 @@
   align-items: center;
   box-shadow: 0 3px 6px #00000029;
 
+  & .container {
+    margin: auto;
+  }
+
   .nav__page {
     display: flex;
     justify-content: space-between;
